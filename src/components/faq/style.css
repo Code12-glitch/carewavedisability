@@ -5,12 +5,13 @@
 
 .faq-section .section-title {
     margin-bottom: 45px;
+    text-align:center;
 }
 
 .faq-section .section-title span {
     display: inline-block;
     margin-bottom: 10px;
-    color: #f15b40;
+    color: #3B874D;
     font-size: 16px;
     font-weight: 600;
 }
@@ -51,7 +52,7 @@
 }
 
 .faq-question:hover {
-    color: #f15b40;
+    color: #3B874D;
 }
 
 .faq-icon {
@@ -62,7 +63,7 @@
     height: 28px;
     margin-left: 15px;
     border-radius: 50%;
-    background: #f15b40;
+    background: #3B874D;
     color: #fff;
     font-size: 20px;
     line-height: 1;
@@ -81,11 +82,11 @@
 
 /* Active FAQ */
 .faq-item.active {
-    border-color: #f15b40;
+    border-color: #3B874D;
 }
 
 .faq-item.active .faq-question {
-    color: #f15b40;
+    color: #3B874D;
 }
 
 /* Responsive */

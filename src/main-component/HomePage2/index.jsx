@@ -12,6 +12,8 @@ import WorldSection from "../../components/world";
 import BlogSection from "../../components/BlogSection";
 import Footer from "../../components/footer";
 import Scrollbar from "../../components/scrollbar";
+import Testimonials from "../../components/testimonials";
+import FAQ from "../../components/faq";
 
 const HomePage2 = () => {
   return (
