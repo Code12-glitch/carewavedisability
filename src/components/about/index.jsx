@@ -15,12 +15,12 @@ const About = (props) => {
                         <div className="wpo-about-text">
                             <div className="wpo-section-title">
                                 <span>What We Do?</span>
-                                <h2>We Are In A Mission To Help The Helpless</h2>
+                                <h2>About CareWave Disability Services</h2>
                             </div>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there.</p>
-                            <p>Thing embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, </p>
+                            <p>At Carewave Disability Services, we are proud to serve as a trusted NDIS provider. Our dedicated team of highly skilled and experienced support workers is passionate about delivering personalised care with expertise, compassion, and genuine empathy.</p>
+                            <p>We understand that every participant has their own unique lifestyle and goals. That’s why we take the time to listen and truly understand each individual’s needs. This allows us to design tailored support plans that perfectly align with their personal journeys. </p>
                             <div className="btns">
-                                <a href="/donate" className="theme-btn" onClick={ClickHandler}>Donate Now</a>
+                                <a href="/contact" className="theme-btn" onClick={ClickHandler}>Contact Us</a>
                                 <ul>
                                     <li className="video-holder">
                                         <VideoModal/>
