@@ -1,6 +1,6 @@
 .wpo-site-footer,
 .wpo-site-footer {
-    background: #062265;
+    background: #024B20;
     position: relative;
     font-size: 15px;
     overflow: hidden;
@@ -36,7 +36,7 @@
 
 .wpo-site-footer .wpo-upper-footer,
 .wpo-site-footer-2 .wpo-upper-footer {
-    padding: 0 0 90px;
+    padding: 90px 0 90px;
 }
 
 @media (max-width: 991px) {
@@ -251,7 +251,7 @@
 .wpo-site-footer-2 .wpo-lower-footer {
     text-align: center;
     position: relative;
-    background: #011b58;
+    background: #306639;
 }
 
 .wpo-site-footer .wpo-lower-footer .row,
