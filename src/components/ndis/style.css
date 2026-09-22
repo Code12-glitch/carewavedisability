@@ -1,0 +1,54 @@
+.wpo-ndis-area .wpo-about-text {
+    padding-right: 50px;
+    padding-top: 30px;
+}
+
+.wpo-ndis-area .wpo-section-title {
+    text-align: left;
+    margin-bottom: 35px;
+}
+
+.wpo-ndis-area .wpo-about-text p {
+    margin-bottom: 35px;
+}
+
+.wpo-ndis-img {
+    width: 100%;
+    position: relative;
+}
+
+.wpo-ndis-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.wpo-ndis-area .btns ul {
+    margin-left: 20px;
+}
+
+.wpo-ndis-area .video-holder .wrap {
+    animation: none;
+}
+
+@media (max-width: 992px) {
+    .wpo-ndis-area .wpo-about-text {
+        padding-right: 0;
+        padding-top: 0;
+        margin-bottom: 40px;
+    }
+
+    .wpo-ndis-img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    .wpo-ndis-area .video-text {
+        display: none;
+    }
+
+    .wpo-ndis-area .btns ul {
+        margin-left: 15px;
+    }
+}

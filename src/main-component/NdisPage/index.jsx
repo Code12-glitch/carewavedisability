@@ -1,33 +1,34 @@
-import React, { Fragment } from "react";
-import Header from "../../components/header";
-import PageTitle from "../../components/pagetitle";
-// import VedioCta from "../../components/vediocta";
-// import Mission from "../../components/mission";
-import About from "../../components/about";
-import CaseSlide from "../../components/case";
-// import CounterSection from "../../components/counter";
-// import TeamSection from "../../components/team";
-import Footer from "../../components/footer";
-import Scrollbar from "../../components/scrollbar";
-import Testimonials from "../../components/testimonials";
-import FAQ from "../../components/faq";
+import React, { Fragment } from 'react'
 
-const CasePage = () => {
-  return (
-    <Fragment>
-      <Header />
-      <PageTitle pageTitle={"About Us"} pagesub={"About"} />
-      {/* <VedioCta/> */}
-      {/* <Mission subclass={'section-padding'}/> */}
-      <About />
-      {/* <CaseSlide/>
-            <CounterSection/>
-            <TeamSection/>  */}
-      <Testimonials />
-      <FAQ />
-      <Footer />
-      <Scrollbar />
-    </Fragment>
-  );
-};
-export default CasePage;
+import Header from '../../components/header'
+import PageTitle from '../../components/pagetitle'
+import Ndis from '../../components/ndis'
+import Testimonials from '../../components/testimonials'
+import FAQ from '../../components/faq'
+import Footer from '../../components/footer'
+import Scrollbar from '../../components/scrollbar'
+
+const NdisPage = () => {
+    return (
+        <Fragment>
+            <Header />
+
+            <PageTitle
+                pageTitle="NDIS"
+                pagesub="NDIS"
+            />
+
+            <Ndis />
+
+            <Testimonials />
+
+            <FAQ />
+
+            <Footer />
+
+            <Scrollbar />
+        </Fragment>
+    )
+}
+
+export default NdisPage
