@@ -17,14 +17,14 @@ const Header = () => {
       <div className="container">
         <div className="header-content">
           <div className="row">
-            <div className="col-lg-3 col-md-4 col-sm-4 col-4">
+            <div className="col-lg-2 col-md-4 col-sm-4 col-4">
               <div className="logo">
                 <Link to="/home" title="">
                   <img src={Logo} alt="" />
                 </Link>
               </div>
             </div>
-            <div className="col-lg-9 d-lg-block d-none">
+            <div className="col-lg-10 d-lg-block d-none">
               <nav>
                 <ul>
                   <li>
@@ -97,17 +97,17 @@ const Header = () => {
                       </li>
                     </ul>
                   </li>
-                   <li>
+                  <li>
                     <Link to="/new-participants" title="">
                       New Participants
                     </Link>
-                    </li>
-                   <li>
+                  </li>
+                  <li>
                     <Link to="/referral" title="">
                       Referral
                     </Link>
-                    </li>
-                  <li>
+                  </li>
+                  {/* <li>
                     <Link to="/event" title="">
                       Event
                     </Link>
@@ -123,8 +123,8 @@ const Header = () => {
                         </Link>
                       </li>
                     </ul>
-                  </li>
-                  <li>
+                  </li> */}
+                  {/* <li>
                     <Link to="/home" title="">
                       Pages
                     </Link>
@@ -150,7 +150,7 @@ const Header = () => {
                         </Link>
                       </li>
                     </ul>
-                  </li>
+                  </li> */}
                   <li>
                     <Link to="/blog">Blog</Link>
                     <ul>

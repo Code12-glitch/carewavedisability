@@ -26,7 +26,7 @@ const Contactpage = () => {
                             <div className="row">
                                 <div className="col-lg-4 col-md-6 col-sm-12 col-12">
                                     <div className="info-item">
-                                        <h2>25 North Street,Dubai</h2>
+                                        <h2>VIC, Australia</h2>
                                         <div className="info-wrap">
                                             <div className="info-icon">
                                                 <i className="ti-world"></i>
@@ -39,7 +39,7 @@ const Contactpage = () => {
                                 </div>
                                 <div className="col-lg-4 col-md-6 col-sm-12 col-12">
                                     <div className="info-item">
-                                        <h2>info@nasarna.com</h2>
+                                        <h2>connect@carewavedisability.com.au</h2>
                                         <div className="info-wrap">
                                             <div className="info-icon-2">
                                                 <i className="fi flaticon-envelope"></i>
@@ -52,7 +52,7 @@ const Contactpage = () => {
                                 </div>
                                 <div className="col-lg-4 col-md-6 col-sm-12 col-12">
                                     <div className="info-item">
-                                        <h2>+91 256-987-239</h2>
+                                        <h2>0433 257 716, 0424 249 901</h2>
                                         <div className="info-wrap">
                                             <div className="info-icon-3">
                                                 <i className="ti-headphone-alt"></i>
