@@ -21,7 +21,7 @@ const VideoSection = () => {
 
       <VideoModal
         isOpen={isOpen}
-        videoId="iSbzh0r9IV4"
+        videoId="qZOjPBJiBPg"
         onClose={() => setIsOpen(false)}
       />
     </>
