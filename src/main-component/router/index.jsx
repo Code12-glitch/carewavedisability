@@ -12,6 +12,8 @@ import AssistTravelTransportPage from "../AssistTravelTransportPage";
 import DailyTasksSharedLivingPage from "../DailyTasksSharedLivingPage";
 import CommunityParticipationPage from "../CommunityParticipationPage";
 import HouseholdTasksPage from "../HouseholdTasksPage";
+import ParticipateCommunityPage from "../ParticipateCommunityPage";
+import GroupCentreActivitiesPage from "../GroupCentreActivitiesPage";
 
 import CasePage from "../CasePage";
 import CaseSinglePage from "../CaseSinglePage";
@@ -34,7 +36,7 @@ import ForgotPassword from "../ForgotPassword";
 const AllRoute = () => {
 return ( <div className="App"> <BrowserRouter> <Routes>
 
-```
+
       {/* Home */}
       <Route path="/" element={<Homepage />} />
       <Route path="home" element={<Homepage />} />
@@ -76,6 +78,16 @@ return ( <div className="App"> <BrowserRouter> <Routes>
         element={<HouseholdTasksPage />}
       />
 
+      <Route
+        path="participate-community"
+        element={<ParticipateCommunityPage />}
+      />
+
+      <Route
+        path="group-centre-activities"
+        element={<GroupCentreActivitiesPage />}
+      />
+
       {/* Cases */}
       <Route path="case" element={<CasePage />} />
       <Route path="case-single" element={<CaseSinglePage />} />
@@ -93,10 +105,12 @@ return ( <div className="App"> <BrowserRouter> <Routes>
       <Route path="blog-left" element={<BlogPageLeft />} />
       <Route path="blog-fullwidth" element={<BlogPageFullwidth />} />
       <Route path="blog-details" element={<BlogDetails />} />
+
       <Route
         path="blog-details-left"
         element={<BlogDetailsLeftSiide />}
       />
+
       <Route
         path="blog-details-fullwidth"
         element={<BlogDetailsFull />}
@@ -112,7 +126,7 @@ return ( <div className="App"> <BrowserRouter> <Routes>
     </Routes>
   </BrowserRouter>
 </div>
-```
+
 
 );
 };

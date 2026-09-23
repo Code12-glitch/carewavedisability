@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-import simg from "../../images/services/img-3.png";
+import simg from "../../images/services/img-4.png";
 
 import "./style.css";
 
@@ -53,7 +53,7 @@ const CommunityParticipation = () => {
                 <img
                   width="100%"
                   src={simg}
-                  alt="Daily Tasks and Shared Living"
+                  alt="Community Participation"
                 />
               </div>
 
