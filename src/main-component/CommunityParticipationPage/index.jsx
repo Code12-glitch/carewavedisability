@@ -1,26 +1,26 @@
-import React, { Fragment } from 'react'
-import Header from '../../components/header'
-import PageTitle from '../../components/pagetitle'
-import DailyTasksSharedLiving from '../../Components/DailyTasksSharedLiving'
-import Footer from '../../components/footer'
-import Scrollbar from '../../components/scrollbar'
+import React, { Fragment } from "react";
+import Header from "../../components/header";
+import PageTitle from "../../components/pagetitle";
+import CommunityParticipation from "../../Components/CommunityParticipation";
+import Footer from "../../components/footer";
+import Scrollbar from "../../components/scrollbar";
 
-const DailyTasksSharedLivingPage = () => {
-    return (
-        <Fragment>
-            <Header />
+const CommunityParticipationPage = () => {
+  return (
+    <Fragment>
+      <Header />
 
-            <PageTitle
-                pageTitle="Daily Tasks & Shared Living"
-                pagesub="Daily Tasks & Shared Living"
-            />
+      <PageTitle
+        pageTitle="Community Participation"
+        pagesub="Community Participation"
+      />
 
-            <DailyTasksSharedLiving />
+      <CommunityParticipation />
 
-            <Footer />
-            <Scrollbar />
-        </Fragment>
-    )
-}
+      <Footer />
+      <Scrollbar />
+    </Fragment>
+  );
+};
 
-export default DailyTasksSharedLivingPage
+export default CommunityParticipationPage;

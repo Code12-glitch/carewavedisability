@@ -10,7 +10,7 @@ import ServicesPage from "../ServicesPage";
 import AssistPersonalActivitiesPage from "../AssistPersonalActivitiesPage";
 import AssistTravelTransportPage from "../AssistTravelTransportPage";
 import DailyTasksSharedLivingPage from "../DailyTasksSharedLivingPage";
-
+import CommunityParticipationPage from "../CommunityParticipationPage";
 import CasePage from "../CasePage";
 import CaseSinglePage from "../CaseSinglePage";
 import EventPage from "../EventPage";
@@ -34,7 +34,6 @@ const AllRoute = () => {
     <div className="App">
       <BrowserRouter>
         <Routes>
-
           {/* Home */}
           <Route path="/" element={<Homepage />} />
           <Route path="home" element={<Homepage />} />
@@ -66,6 +65,11 @@ const AllRoute = () => {
             element={<DailyTasksSharedLivingPage />}
           />
 
+          <Route
+            path="/community-participation"
+            element={<CommunityParticipationPage />}
+          />
+
           {/* Cases */}
           <Route path="case" element={<CasePage />} />
           <Route path="case-single" element={<CaseSinglePage />} />
@@ -83,14 +87,8 @@ const AllRoute = () => {
           <Route path="blog-left" element={<BlogPageLeft />} />
           <Route path="blog-fullwidth" element={<BlogPageFullwidth />} />
           <Route path="blog-details" element={<BlogDetails />} />
-          <Route
-            path="blog-details-left"
-            element={<BlogDetailsLeftSiide />}
-          />
-          <Route
-            path="blog-details-fullwidth"
-            element={<BlogDetailsFull />}
-          />
+          <Route path="blog-details-left" element={<BlogDetailsLeftSiide />} />
+          <Route path="blog-details-fullwidth" element={<BlogDetailsFull />} />
 
           {/* Contact / Authentication */}
           <Route path="404" element={<ErrorPage />} />
@@ -98,7 +96,6 @@ const AllRoute = () => {
           <Route path="login" element={<LoginPage />} />
           <Route path="signup" element={<SignUpPage />} />
           <Route path="forgot-password" element={<ForgotPassword />} />
-
         </Routes>
       </BrowserRouter>
     </div>
