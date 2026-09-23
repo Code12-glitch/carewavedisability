@@ -7,6 +7,7 @@ import AboutPage from "../AboutPage";
 import NdisPage from "../NdisPage";
 import ServicesPage from "../ServicesPage";
 import AssistPersonalActivitiesPage from "../AssistPersonalActivitiesPage";
+import AssistTravelTransportPage from "../AssistTravelTransportPage";
 import CasePage from "../CasePage";
 import CaseSinglePage from "../CaseSinglePage";
 import EventPage from "../EventPage";
@@ -44,9 +45,13 @@ const AllRoute = () => {
           <Route path="services" element={<ServicesPage />} />
 
           <Route
-    path="/assist-personal-activities"
-    element={<AssistPersonalActivitiesPage />}
-/>
+            path="/assist-personal-activities"
+            element={<AssistPersonalActivitiesPage />}
+          />
+          <Route
+            path="/assist-travel-transport"
+            element={<AssistTravelTransportPage />}
+          />
 
           <Route path="case" element={<CasePage />} />
           <Route path="case-single" element={<CaseSinglePage />} />

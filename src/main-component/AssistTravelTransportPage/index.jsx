@@ -1,26 +1,26 @@
 import React, { Fragment } from 'react'
 import Header from '../../components/header'
 import PageTitle from '../../components/pagetitle'
-import AssistPersonalActivities from "../../Components/AssistPersonalActivities";
+import AssistTravelTransport from "../../Components/AssistTravelTransport"
 import Footer from '../../components/footer'
 import Scrollbar from '../../components/scrollbar'
 
-const AssistPersonalActivitiesPage = () => {
+const AssistTravelTransportPage = () => {
     return (
         <Fragment>
             <Header />
 
             <PageTitle
-                pageTitle="Assist Personal Activities"
-                pagesub="Assist Personal Activities"
+                pageTitle="Assist Travel & Transport"
+                pagesub="Assist Travel & Transport"
             />
 
-            <AssistPersonalActivities />
-        
+            <AssistTravelTransport />
+
             <Footer />
             <Scrollbar />
         </Fragment>
     )
 }
 
-export default AssistPersonalActivitiesPage
+export default AssistTravelTransportPage

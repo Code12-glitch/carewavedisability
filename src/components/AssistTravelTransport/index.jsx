@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-import simg from "../../images/services/img-1.png";
+import simg from "../../images/services/img-2.png";
 
 import "./style.css";
 
-const AssistPersonalActivities = () => {
+const AssistTravelTransport = () => {
   const [openFaq, setOpenFaq] = useState(null);
 
   const ClickHandler = () => {
@@ -14,24 +14,24 @@ const AssistPersonalActivities = () => {
 
   const faqData = [
     {
-      question: "What are assist personal activities?",
+      question: "What is Assist Travel & Transport?",
       answer:
-        "Assist Personal Activities NDIS provides support with daily personal care tasks, helping NDIS participants maintain independence and improve their quality of life. ",
+        "Assist Travel & Transport provides support to help NDIS participants travel safely and confidently to appointments, work, education, and community activities. ",
     },
     {
-      question: "Do you offer assistance with personal domestic activities?",
+      question: "Do you offer travel transport NDIS Melbourne?",
       answer:
-        "Yes, Carewave Disability Services offers household tasks, community participation, assist personal activities Melbourne and more.",
+        "Yes, we offer assist travel & Transport, along with daily tasks, shared living, community participation, household tasks and much more. ",
     },
     {
-      question: "Who is eligible for Assist Personal Activities?",
+      question: "How does assist travel transport under NDIS work?",
       answer:
-        "NDIS participants with approved funding for personal care support in their plan may be eligible. ",
+        "The Assistance Travel and Transport program is designed to help people with disabilities access the same travel opportunities as everyone else. ",
     },
     {
-      question: "What services do you offer? ",
+      question: "What services do you offer?",
       answer:
-        "We offer everything, from household tasks to community participation, assist personal activities and more. ",
+        "At Carewave Disability Services, we offer assist travel & transport, along with community participation, household tasks, assist personal activities and more. ",
     },
   ];
 
@@ -43,17 +43,15 @@ const AssistPersonalActivities = () => {
     <div className="wpo-case-details-area section-padding">
       <div className="container">
         <div className="row">
-
           {/* Main Content */}
           <div className="col col-lg-8">
             <div className="wpo-case-details-wrap">
-
               {/* Service Image */}
               <div className="wpo-case-details-img">
                 <img
                   width="100%"
                   src={simg}
-                  alt="Assist Personal Activities"
+                  alt="Assist Travel and Transport"
                 />
               </div>
 
@@ -61,187 +59,128 @@ const AssistPersonalActivities = () => {
               <div className="wpo-case-details-text">
                 <div className="wpo-case-content">
                   <div className="wpo-case-text-top">
-
-                    <h2>
-                      Supporting Your Daily Life with Personal Care That Matters
-                    </h2>
+                    <h2>Safe, Reliable Travel Support You Can Trust </h2>
 
                     <p>
-                      Carewave Disability Services offers a range of services
-                      designed to support individuals with disabilities in
-                      achieving greater autonomy and independence. This includes
-                      assist personal activities, community participation,
-                      household tasks and more. Our highly trained staff assist
-                      personal activities Melbourne, while also working to
-                      develop the skills and abilities of participants.
+                      Assist travel & transport includes support that enables
+                      participants to build capacity to independently travel,
+                      including through personal transport, related training or
+                      aids and equipment to use public transport
+                      independently.
                     </p>
-
                     <p>
-                      You don’t have to tackle daily challenges alone. With
-                      Carewave Disability Services, you have the confidence of
-                      knowing you’ve got a professional and caring team by your
-                      side, helping you maintain your independence and live your
-                      life on your terms. Get personalised assist personal
-                      activities NDIS and related care with us today.
+                      Our assist travel transport NDIS service is a secure and
+                      comfortable choice for those who need extra support while
+                      travelling. Our experienced team can help with anything
+                      and everything. At Carewave Disability Services, apart
+                      from travel transport NDIS Melbourne, we offer daily
+                      tasks, shared living, household tasks, community
+                      participation and much more.
                     </p>
 
-                    <h3>What are Assist Personal Activities?</h3>
+                    <h3>What is Assistance Travel and Transport?</h3>
 
-                    <p>
-                      Assist Personal Activities are NDIS-funded supports that
-                      help participants with everyday personal care tasks so
-                      they can live more independently, safely, and
-                      comfortably.
-                    </p>
+                    <p>Assist travel & transport is a comprehensive transportation service specially designed for NDIS participants to provide them with the necessary transport support to ease their travelling requirements. Assist Travel Transport under the National Disability Insurance Scheme may include:</p>
 
                     <div className="case-bb-text">
-
-                      <h5>Your Support Includes</h5>
-
-                      <ul>
-                        <li>
-                          Assistance with showering, bathing, and personal
-                          hygiene
-                        </li>
-                        <li>Dressing and grooming support</li>
-                        <li>Toileting and continence care</li>
-                        <li>Help with eating and drinking</li>
-                        <li>Mobility and transferring assistance</li>
-                        <li>
-                          Medication reminders and assistance (as per NDIS plan)
-                        </li>
-                        <li>Morning and evening routines</li>
-                        <li>Assistance with using mobility aids</li>
-                        <li>Support with personal health and wellbeing</li>
-                        <li>
-                          Individualised care tailored to your daily needs
-                        </li>
-                      </ul>
-
-                      <h3>Benefits of our assist personal activities</h3>
-
-                      <p>
-                        Carewave Disability Services offers assistance with
-                        personal domestic activities. Participants and their
-                        families may choose us for:
-                      </p>
+                      {/* <h5>Your Support Includes</h5> */}
 
                       <ul>
-                        <li>More independence</li>
-                        <li>Improved quality of life</li>
-                        <li>Personalised support</li>
-                        <li>Reducing family burden</li>
-                        <li>Holistic support</li>
+                        <li>Transport Assistance</li>
+                        <li>Transport Services</li>
+                        <li>Travel Training</li>
                       </ul>
 
-                      <h3>What Do Our Assist Personal Activities Include?</h3>
-
-                      <p>
-                        Our assist personal activities NDIS support helps
-                        participants work towards their goals and manage their
-                        daily lives. These may include:
-                      </p>
+                      <h3>What Assist Travel Transport NDIS We Offer? </h3>
+                      <p>Our comprehensive Assist travel & transport service covers all aspects of your travel needs, ensuring confident and safe journeys:</p>
 
                       <ul>
-                        <li>Mobility and Transfers</li>
-                        <li>Personal Hygiene</li>
-                        <li>Toileting and Bowel Management</li>
-                        <li>Event Attendance</li>
-                        <li>Planning Your Day</li>
-                        <li>Shopping Assistance</li>
-                        <li>Attending Appointments</li>
-                        <li>Household Tasks</li>
-                        <li>Support with Eating and Drinking</li>
+                        <li>Access Personal Vehicles</li>
+                        <li>Specialised Aids and Equipment</li>
+                        <li>Public Transport Training </li>
                       </ul>
 
-                      <h3>
-                        How to choose the right provider for assist personal
-                        activities?
-                      </h3>
+                      <h3>Where Can We Take You?</h3>
 
-                      <p>
-                        Choosing the right support provider is an important
-                        decision. Some factors to consider before choosing a
-                        provider for assist personal activities include:
-                      </p>
+                      <p>At Carewave Disability Services, our assist travel transport NDIS service empowers you to reach where you need to go, including but not limited to:</p>
 
                       <ul>
-                        <li>Qualifications</li>
-                        <li>Personalised support plans</li>
-                        <li>Communication and compatibility</li>
-                        <li>Experienced team</li>
-                        <li>Holistic support</li>
-                        <li>Range of services</li>
+                        <li>Medical Appointments </li>
+                        <li>Educational Institutes</li>
+                        <li>Community Functions </li>
+                        <li>Training and Development</li>
                       </ul>
 
-                      <h3>
-                        How Do I Get NDIS Assist Personal Activities Support?
-                      </h3>
+                      <h3>Why is Assist Travel Transport Important?</h3>
 
-                      <p>
-                        Getting help with personal care and daily activities
-                        doesn't have to be complicated. Here are five steps:
-                      </p>
+                      <p>Assist travel & transport support plays a crucial role in improving social participation and independence. It helps participants:</p>
 
                       <ul>
-                        <li>
-                          <b>Step 1 - Check Your NDIS Plan:</b> Look under the
-                          relevant support categories in your NDIS plan.
-                        </li>
-
-                        <li>
-                          <b>Step 2 - Know What You Need:</b> Be clear about the
-                          tasks you need help with, such as meal preparation,
-                          dressing, showering, or community activities.
-                        </li>
-
-                        <li>
-                          <b>Step 3 - Pick the Right Provider:</b> Select a
-                          provider you trust and one that can match your needs
-                          and routine.
-                        </li>
-
-                        <li>
-                          <b>Step 4 - Plan Your Support:</b> Discuss your
-                          preferences, routine, goals, and support requirements
-                          with your provider.
-                        </li>
-
-                        <li>
-                          <b>Step 5 - Start Your Support:</b> Your support worker
-                          can assist you with agreed activities safely,
-                          respectfully, and according to your preferences.
-                        </li>
+                        <li>Attend important appointments on time</li>
+                        <li>Participate in community life</li>
+                        <li>Access employment and education opportunities</li>
+                        <li>Reduce reliance on family members for transport</li>
+                        <li>Enhanced independence</li>
+                        <li>Cost and time saving</li>
+                        <li>Access to essential services</li>
+                        <li>Build confidence in travel skills </li>
                       </ul>
 
-                      <h3>
-                        Why choose Carewave Disability Services for your assist
-                        personal activities?
-                      </h3>
+                      <h3>How to Choose a Provider for Assist Travel & Transport Under NDIS?</h3>
 
-                      <p>
-                        Participants and their families can discuss their
-                        individual requirements with our team to understand how
-                        our services may support their needs.
-                      </p>
+                      <p>You should check some factors before finalising on a provider for travel transport NDIS Melbourne: </p>
 
                       <ul>
-                        <li>Personalised support</li>
-                        <li>Qualified team</li>
-                        <li>Experience</li>
-                        <li>Dedicated NDIS provider</li>
-                        <li>Holistic support</li>
+                        <li>Check NDIS experience</li>
+                        <li>Reliable and punctual</li>
+                        <li>Qualified support staff</li>
+                        <li>Flexible scheduling</li>
+                        <li>Accessible vehicles</li>
+                        <li>Person-centred support</li>
+                        <li>Clear communication</li>
+                        <li>Positive reviews and reputation</li>
                       </ul>
+
+                      <p>Carewave Disability Services is a reliable provider and ticks all of the above boxes when it comes to assistance travel and transport under NDIS. </p>
+
+                      <h3>Signs You Need Assist Travel & Transport</h3>
+
+                      <ul>
+                        <li>You find it difficult to travel independently.</li>
+                        <li>You need support getting to medical appointments or therapy.</li>
+                        <li>Public transport feels unsafe or inaccessible for you.</li>
+                        <li>You require reliable transport to work, school, or community activities.</li>
+                        <li>You rely on family or friends for most of your travel.</li>
+                        <li>You want to participate in more social and recreational activities.</li>
+                        <li>You need assistance with boarding, exiting, or navigating transport.</li>
+                        <li>You want to build confidence and independence while travelling.</li>
+                      </ul>
+
+                      <h3>Why Choose Carewave Disability Services as your Assist Travel & Transport Provider?</h3>
+                      
+                     <p>Are you or a dear one seeking travel transport NDIS Melbourne? At Carewave Disability Services, we’re devoted to helping people with disabilities maintain their independence. </p>
+                     <ul>
+                      <li>Our mission is simple: to empower you, focusing on your support requirements and unique preferences. </li>
+                      <li>Participants and their families choose us as:<br></br>
+                        <ul>
+                          <li>Comprehensive services </li>
+                          <li>Qualified team </li>
+                          <li>Personalised support</li>
+                          <li>Flexible</li>
+                          <li>Holistic support</li>
+                        </ul>
+                      </li>
+                     </ul>
+
 
                       {/* FAQ SECTION */}
                       <div className="service-faq">
-
                         <h3>Frequently Asked Questions</h3>
 
                         <p className="faq-intro">
-                          Have questions about Assist Personal Activities?
-                          Here are some common questions about our support
-                          services.
+                          Have questions about Assist Travel & Transport? Here
+                          are some common questions about our travel and
+                          transport support.
                         </p>
 
                         <div className="faq-list">
@@ -273,11 +212,9 @@ const AssistPersonalActivities = () => {
                             </div>
                           ))}
                         </div>
-
                       </div>
 
                      
-
                     </div>
                   </div>
                 </div>
@@ -288,7 +225,6 @@ const AssistPersonalActivities = () => {
           {/* Sidebar */}
           <div className="col col-lg-4">
             <div className="wpo-service-sidebar">
-
               <div className="service-sidebar-box">
                 <h3>Our Services</h3>
 
@@ -300,38 +236,36 @@ const AssistPersonalActivities = () => {
                   </li>
 
                   <li>
-                    <Link to="/services">
-                      Community Participation
-                    </Link>
-                  </li>
-
-                  <li>
-                    <Link to="/services">
+                    <Link to="/assist-travel-transport">
                       Assist Travel & Transport
                     </Link>
                   </li>
 
                   <li>
-                    <Link to="/services">
+                    <Link to="/daily-tasks-shared-living">
                       Daily Tasks & Shared Living
                     </Link>
                   </li>
 
                   <li>
-                    <Link to="/services">
-                      Household Tasks
+                    <Link to="/community-participation">
+                      Community Participation
                     </Link>
                   </li>
 
                   <li>
-                    <Link to="/services">
+                    <Link to="/household-tasks">Household Tasks</Link>
+                  </li>
+
+                  <li>
+                    <Link to="/participate-community">
                       Participate Community
                     </Link>
                   </li>
 
                   <li>
-                    <Link to="/services">
-                      Group & Centre Based Activities
+                    <Link to="/group-centre-activities">
+                      Group & Centre Activities
                     </Link>
                   </li>
                 </ul>
@@ -341,8 +275,8 @@ const AssistPersonalActivities = () => {
                 <h3>Need Support?</h3>
 
                 <p>
-                  Talk to our friendly team about your individual support
-                  needs.
+                  Talk to our friendly team about your individual travel and
+                  transport needs.
                 </p>
 
                 <Link
@@ -353,14 +287,12 @@ const AssistPersonalActivities = () => {
                   Contact Us
                 </Link>
               </div>
-
             </div>
           </div>
-
         </div>
       </div>
     </div>
   );
 };
 
-export default AssistPersonalActivities;
+export default AssistTravelTransport;
