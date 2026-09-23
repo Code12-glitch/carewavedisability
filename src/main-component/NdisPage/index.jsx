@@ -20,9 +20,7 @@ const NdisPage = () => {
 
             <Ndis />
 
-            <Testimonials />
 
-            <FAQ />
 
             <Footer />
 

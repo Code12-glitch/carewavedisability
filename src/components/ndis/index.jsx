@@ -16,10 +16,10 @@ const Ndis = () => {
           <div className="col-lg-6 col-md-12 col-sm-12">
             <div className="wpo-about-text">
               <div className="wpo-section-title">
-                <span>National Disability Insurance Scheme</span>
+                <span> NDIS</span> 
 
                 <h2>
-                  What Is The National Disability Insurance Scheme (NDIS)?
+                  What Is The National Disability Insurance Scheme?
                 </h2>
               </div>
 
@@ -46,21 +46,31 @@ const Ndis = () => {
                   Contact Us
                 </Link>
 
-                <ul>
+                {/* <ul>
                   <li className="video-holder">
                     <VideoModal />
                   </li>
 
                   <li className="video-text">Watch Our Video</li>
-                </ul>
+                </ul> */}
               </div>
             </div>
           </div>
 
           <div className="col-lg-6 col-md-12 col-sm-12">
-            <div className="wpo-ndis-img">
-              <img src={ndisimg} alt="CareWave NDIS Services" />
+            <div className="wpo-ndis-video">
+              <iframe
+                width="100%"
+                height="315"
+                src="https://www.youtube.com/embed/qZOjPBJiBPg"
+                title="CareWave NDIS Video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
             </div>
+            {/* <div className="wpo-ndis-img">
+              <img src={ndisimg} alt="CareWave NDIS Services" />
+            </div> */}
           </div>
         </div>
       </div>
