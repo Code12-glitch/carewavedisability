@@ -71,7 +71,7 @@ const Header = () => {
                         </Link>
                       </li>
                       <li>
-                        <Link to="/daily-task-shared-living" title="">
+                        <Link to="/daily-tasks-shared-living" title="">
                           Daily Tasks & Shared Living
                         </Link>
                       </li>

@@ -6,8 +6,11 @@ import Homepage3 from "../HomePage3";
 import AboutPage from "../AboutPage";
 import NdisPage from "../NdisPage";
 import ServicesPage from "../ServicesPage";
+
 import AssistPersonalActivitiesPage from "../AssistPersonalActivitiesPage";
 import AssistTravelTransportPage from "../AssistTravelTransportPage";
+import DailyTasksSharedLivingPage from "../DailyTasksSharedLivingPage";
+
 import CasePage from "../CasePage";
 import CaseSinglePage from "../CaseSinglePage";
 import EventPage from "../EventPage";
@@ -31,51 +34,71 @@ const AllRoute = () => {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Homepage />} />
 
+          {/* Home */}
+          <Route path="/" element={<Homepage />} />
           <Route path="home" element={<Homepage />} />
           <Route path="home2" element={<Homepage2 />} />
           <Route path="home3" element={<Homepage3 />} />
 
+          {/* About */}
           <Route path="about" element={<AboutPage />} />
 
-          {/* NDIS Page */}
+          {/* NDIS */}
           <Route path="ndis" element={<NdisPage />} />
 
+          {/* Services */}
           <Route path="services" element={<ServicesPage />} />
 
+          {/* Individual Services */}
           <Route
-            path="/assist-personal-activities"
+            path="assist-personal-activities"
             element={<AssistPersonalActivitiesPage />}
           />
+
           <Route
-            path="/assist-travel-transport"
+            path="assist-travel-transport"
             element={<AssistTravelTransportPage />}
           />
 
+          <Route
+            path="daily-tasks-shared-living"
+            element={<DailyTasksSharedLivingPage />}
+          />
+
+          {/* Cases */}
           <Route path="case" element={<CasePage />} />
           <Route path="case-single" element={<CaseSinglePage />} />
 
+          {/* Events */}
           <Route path="event" element={<EventPage />} />
           <Route path="event-details" element={<EventPageSingle />} />
 
+          {/* Other */}
           <Route path="donate" element={<DonatePage />} />
           <Route path="volunteer" element={<VolunteerPage />} />
 
+          {/* Blog */}
           <Route path="blog" element={<BlogPage />} />
           <Route path="blog-left" element={<BlogPageLeft />} />
           <Route path="blog-fullwidth" element={<BlogPageFullwidth />} />
-
           <Route path="blog-details" element={<BlogDetails />} />
-          <Route path="blog-details-left" element={<BlogDetailsLeftSiide />} />
-          <Route path="blog-details-fullwidth" element={<BlogDetailsFull />} />
+          <Route
+            path="blog-details-left"
+            element={<BlogDetailsLeftSiide />}
+          />
+          <Route
+            path="blog-details-fullwidth"
+            element={<BlogDetailsFull />}
+          />
 
+          {/* Contact / Authentication */}
           <Route path="404" element={<ErrorPage />} />
           <Route path="contact" element={<ContactPage />} />
-
           <Route path="login" element={<LoginPage />} />
           <Route path="signup" element={<SignUpPage />} />
           <Route path="forgot-password" element={<ForgotPassword />} />
+
         </Routes>
       </BrowserRouter>
     </div>

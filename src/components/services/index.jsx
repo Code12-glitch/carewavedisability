@@ -36,7 +36,7 @@ const Services = () => {
       title: "Daily Tasks & Shared Living",
       description:
         "We provide personalised support with daily activities and shared living, helping participants build independence, confidence, and a meaningful lifestyle.",
-      link: "/daily-task-shared-living",
+      link: "/daily-tasks-shared-living",
     },
     {
       image: service4,
