@@ -1,311 +1,366 @@
-import React, { useState } from 'react';
-import { TabContent, TabPane, Nav, NavItem, NavLink } from 'reactstrap';
-import classnames from 'classnames';
-import {Link} from 'react-router-dom'
-import SidebarWrap from '../SidebarWrap'
-import simg from '../../images/event-details.jpg'
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
-import blog3 from '../../images/blog-details/comments-author/img-1.jpg'
-import blog4 from '../../images/blog-details/comments-author/img-2.jpg'
-import blog5 from '../../images/blog-details/comments-author/img-3.jpg'
+import simg from "../../images/services/img-1.png";
 
-import pmt1 from '../../images/checkout/img-1.png'
-import pmt2 from '../../images/checkout/img-2.png'
-import pmt3 from '../../images/checkout/img-3.png'
-import pmt4 from '../../images/checkout/img-4.png'
+import "./style.css";
 
+const AssistPersonalActivities = () => {
+  const [openFaq, setOpenFaq] = useState(null);
 
-import './style.css'
+  const ClickHandler = () => {
+    window.scrollTo(0, 0);
+  };
 
-const CaseSingle = (props) => {
+  const faqData = [
+    {
+      question: "What are assist personal activities?",
+      answer:
+        "Assist Personal Activities NDIS provides support with daily personal care tasks, helping NDIS participants maintain independence and improve their quality of life. ",
+    },
+    {
+      question: "Do you offer assistance with personal domestic activities?",
+      answer:
+        "Yes, Carewave Disability Services offers household tasks, community participation, assist personal activities Melbourne and more.",
+    },
+    {
+      question: "Who is eligible for Assist Personal Activities?",
+      answer:
+        "NDIS participants with approved funding for personal care support in their plan may be eligible. ",
+    },
+    {
+      question: "What services do you offer? ",
+      answer:
+        "We offer everything, from household tasks to community participation, assist personal activities and more. ",
+    },
+  ];
 
-    const SubmitHandler = (e) =>{
-        e.preventDefault()
-    }
+  const toggleFaq = (index) => {
+    setOpenFaq(openFaq === index ? null : index);
+  };
 
-    const [activeTab, setActiveTab] = useState('1');
+  return (
+    <div className="wpo-case-details-area section-padding">
+      <div className="container">
+        <div className="row">
 
-    const toggle = tab => {
-      if(activeTab !== tab) setActiveTab(tab);
-    }
+          {/* Main Content */}
+          <div className="col col-lg-8">
+            <div className="wpo-case-details-wrap">
 
-        return (
-            <div className="wpo-case-details-area section-padding">
-            <div className="container">
-                <div className="row">
-                    <div className="col col-lg-8">
-                        <div className="wpo-case-details-wrap">
-                            <div className="wpo-case-details-img">
-                                <img src={simg} alt=""/>
+              {/* Service Image */}
+              <div className="wpo-case-details-img">
+                <img
+                  width="100%"
+                  src={simg}
+                  alt="Assist Personal Activities"
+                />
+              </div>
+
+              {/* Service Content */}
+              <div className="wpo-case-details-text">
+                <div className="wpo-case-content">
+                  <div className="wpo-case-text-top">
+
+                    <h2>
+                      Supporting Your Daily Life with Personal Care That Matters
+                    </h2>
+
+                    <p>
+                      Carewave Disability Services offers a range of services
+                      designed to support individuals with disabilities in
+                      achieving greater autonomy and independence. This includes
+                      assist personal activities, community participation,
+                      household tasks and more. Our highly trained staff assist
+                      personal activities Melbourne, while also working to
+                      develop the skills and abilities of participants.
+                    </p>
+
+                    <p>
+                      You don’t have to tackle daily challenges alone. With
+                      Carewave Disability Services, you have the confidence of
+                      knowing you’ve got a professional and caring team by your
+                      side, helping you maintain your independence and live your
+                      life on your terms. Get personalised assist personal
+                      activities NDIS and related care with us today.
+                    </p>
+
+                    <h3>What are Assist Personal Activities?</h3>
+
+                    <p>
+                      Assist Personal Activities are NDIS-funded supports that
+                      help participants with everyday personal care tasks so
+                      they can live more independently, safely, and
+                      comfortably.
+                    </p>
+
+                    <div className="case-bb-text">
+
+                      <h5>Your Support Includes</h5>
+
+                      <ul>
+                        <li>
+                          Assistance with showering, bathing, and personal
+                          hygiene
+                        </li>
+                        <li>Dressing and grooming support</li>
+                        <li>Toileting and continence care</li>
+                        <li>Help with eating and drinking</li>
+                        <li>Mobility and transferring assistance</li>
+                        <li>
+                          Medication reminders and assistance (as per NDIS plan)
+                        </li>
+                        <li>Morning and evening routines</li>
+                        <li>Assistance with using mobility aids</li>
+                        <li>Support with personal health and wellbeing</li>
+                        <li>
+                          Individualised care tailored to your daily needs
+                        </li>
+                      </ul>
+
+                      <h3>Benefits of our assist personal activities</h3>
+
+                      <p>
+                        Carewave Disability Services offers assistance with
+                        personal domestic activities. Participants and their
+                        families may choose us for:
+                      </p>
+
+                      <ul>
+                        <li>More independence</li>
+                        <li>Improved quality of life</li>
+                        <li>Personalised support</li>
+                        <li>Reducing family burden</li>
+                        <li>Holistic support</li>
+                      </ul>
+
+                      <h3>What Do Our Assist Personal Activities Include?</h3>
+
+                      <p>
+                        Our assist personal activities NDIS support helps
+                        participants work towards their goals and manage their
+                        daily lives. These may include:
+                      </p>
+
+                      <ul>
+                        <li>Mobility and Transfers</li>
+                        <li>Personal Hygiene</li>
+                        <li>Toileting and Bowel Management</li>
+                        <li>Event Attendance</li>
+                        <li>Planning Your Day</li>
+                        <li>Shopping Assistance</li>
+                        <li>Attending Appointments</li>
+                        <li>Household Tasks</li>
+                        <li>Support with Eating and Drinking</li>
+                      </ul>
+
+                      <h3>
+                        How to choose the right provider for assist personal
+                        activities?
+                      </h3>
+
+                      <p>
+                        Choosing the right support provider is an important
+                        decision. Some factors to consider before choosing a
+                        provider for assist personal activities include:
+                      </p>
+
+                      <ul>
+                        <li>Qualifications</li>
+                        <li>Personalised support plans</li>
+                        <li>Communication and compatibility</li>
+                        <li>Experienced team</li>
+                        <li>Holistic support</li>
+                        <li>Range of services</li>
+                      </ul>
+
+                      <h3>
+                        How Do I Get NDIS Assist Personal Activities Support?
+                      </h3>
+
+                      <p>
+                        Getting help with personal care and daily activities
+                        doesn't have to be complicated. Here are five steps:
+                      </p>
+
+                      <ul>
+                        <li>
+                          <b>Step 1 - Check Your NDIS Plan:</b> Look under the
+                          relevant support categories in your NDIS plan.
+                        </li>
+
+                        <li>
+                          <b>Step 2 - Know What You Need:</b> Be clear about the
+                          tasks you need help with, such as meal preparation,
+                          dressing, showering, or community activities.
+                        </li>
+
+                        <li>
+                          <b>Step 3 - Pick the Right Provider:</b> Select a
+                          provider you trust and one that can match your needs
+                          and routine.
+                        </li>
+
+                        <li>
+                          <b>Step 4 - Plan Your Support:</b> Discuss your
+                          preferences, routine, goals, and support requirements
+                          with your provider.
+                        </li>
+
+                        <li>
+                          <b>Step 5 - Start Your Support:</b> Your support worker
+                          can assist you with agreed activities safely,
+                          respectfully, and according to your preferences.
+                        </li>
+                      </ul>
+
+                      <h3>
+                        Why choose Carewave Disability Services for your assist
+                        personal activities?
+                      </h3>
+
+                      <p>
+                        Participants and their families can discuss their
+                        individual requirements with our team to understand how
+                        our services may support their needs.
+                      </p>
+
+                      <ul>
+                        <li>Personalised support</li>
+                        <li>Qualified team</li>
+                        <li>Experience</li>
+                        <li>Dedicated NDIS provider</li>
+                        <li>Holistic support</li>
+                      </ul>
+
+                      {/* FAQ SECTION */}
+                      <div className="service-faq">
+
+                        <h3>Frequently Asked Questions</h3>
+
+                        <p className="faq-intro">
+                          Have questions about Assist Personal Activities?
+                          Here are some common questions about our support
+                          services.
+                        </p>
+
+                        <div className="faq-list">
+                          {faqData.map((faq, index) => (
+                            <div
+                              className={`faq-item ${
+                                openFaq === index ? "active" : ""
+                              }`}
+                              key={index}
+                            >
+                              <button
+                                type="button"
+                                className="faq-question"
+                                onClick={() => toggleFaq(index)}
+                                aria-expanded={openFaq === index}
+                              >
+                                <span>{faq.question}</span>
+
+                                <span className="faq-icon">
+                                  {openFaq === index ? "−" : "+"}
+                                </span>
+                              </button>
+
+                              {openFaq === index && (
+                                <div className="faq-answer">
+                                  <p>{faq.answer}</p>
+                                </div>
+                              )}
                             </div>
-                            <div className="wpo-case-details-tab">
-                                <Nav tabs>
-                                    <NavItem>
-                                        <NavLink
-                                            className={classnames({ active: activeTab === '1' })}
-                                            onClick={() => { toggle('1'); }}
-                                        >
-                                            Description
-                                        </NavLink>
-                                    </NavItem>
-                                    <NavItem>
-                                        <NavLink
-                                            className={classnames({ active: activeTab === '2' })}
-                                            onClick={() => { toggle('2'); }}
-                                        >
-                                        Donations
-                                        </NavLink>
-                                    </NavItem>
-
-                                    <NavItem>
-                                        <NavLink
-                                            className={classnames({ active: activeTab === '3' })}
-                                                onClick={() => { toggle('3'); }}
-                                            >
-                                            Comments
-                                        </NavLink>
-                                    </NavItem>
-                                </Nav>
-                            </div>
-                            <div className="wpo-case-details-text">
-                            <TabContent activeTab={activeTab}>
-                                <TabPane tabId="1">
-                                    <div className="row">
-                                        <div className="col-12">
-                                            <div className="wpo-case-content">
-                                                <div className="wpo-case-text-top">
-                                                    <h2>Ensure Education for every poor children</h2>
-                                                    <div className="progress-section">
-                                                        <div className="process">
-                                                            <div className="progress">
-                                                                <div className="progress-bar">
-                                                                    <div className="progress-value"><span>65.5</span>%</div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <ul>
-                                                        <li><span>Raised:</span> $7,000.00</li>
-                                                        <li><span>Goal:</span> $8,000.00</li>
-                                                        <li><span>Donar:</span> 380</li>
-                                                    </ul>
-                                                    <div className="case-b-text">
-                                                        <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain.</p>
-                                                        <p>These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided.</p>
-                                                        <p>But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures.</p>
-                                                    </div>
-                                                    <div className="case-bb-text">
-                                                        <h3>We want to ensure the education for the kids.</h3>
-                                                        <p>These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure.</p>
-                                                        <ul>
-                                                            <li>The wise man therefore always holds in these matters.</li>
-                                                            <li>In a free hour, when our power of choice and when nothing.</li>
-                                                            <li>Else he endures pains to avoid worse pains.</li>
-                                                            <li>We denounce with righteous indignation and dislike men. </li>
-                                                            <li>Which is the same as saying through.</li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </TabPane>
-                                <TabPane tabId="2">
-                                    <form onSubmit={SubmitHandler} action="#">
-                                        <div className="wpo-donations-amount">
-                                            <h2>Your Donation</h2>
-                                            <input type="text" className="form-control" name="text" id="text" placeholder="Enter Donation Amount"/>
-                                        </div>
-                                        <div className="wpo-donations-details">
-                                            <h2>Details</h2>
-                                            <div className="row">
-                                                <div className="col-lg-6 col-md-6 col-sm-6 col-12 form-group">
-                                                    <input type="text" className="form-control" name="name" id="fname" placeholder="First Name"/>
-                                                </div>
-                                                <div className="col-lg-6 col-md-6 col-sm-6 col-12 form-group">
-                                                    <input type="text" className="form-control" name="name" id="name" placeholder="Last Name"/>
-                                                </div>
-                                                <div className="col-lg-6 col-md-6 col-sm-6 col-12 form-group clearfix">
-                                                    <input type="email" className="form-control" name="email" id="email" placeholder="Email"/>
-                                                </div>
-                                                <div className="col-lg-6 col-md-6 col-sm-6 col-12 form-group">
-                                                    <input type="text" className="form-control" name="Adress" id="Adress" placeholder="Adress"/>
-                                                </div>
-                                                <div className="col-lg-12 col-12 form-group">
-                                                    <textarea className="form-control" name="note" id="note" placeholder="Message"></textarea>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="wpo-doanation-payment">
-                                            <h2>Choose Your Payment Method</h2>
-                                            <div className="wpo-payment-area">
-                                                <div className="row">
-                                                    <div className="col-12">
-                                                        <div className="wpo-payment-option" id="open4">
-                                                            <div className="wpo-payment-select">
-                                                                <ul>
-                                                                    <li className="addToggle">
-                                                                        <input id="add"  type="radio" name="payment" value="30"/>
-                                                                        <label htmlFor="add">Payment By Card</label>
-                                                                    </li>
-                                                                    <li className="removeToggle">
-                                                                        <input id="remove" type="radio" name="payment" value="30"/>
-                                                                        <label htmlFor="remove">Offline Donation</label>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                            <div id="open5" className="payment-name">
-                                                                <ul>
-                                                                    <li className="visa"><input id="1" type="radio" name="size" value="30"/>
-                                                                        <label htmlFor="1"><img src={pmt1} alt=""/></label>
-                                                                    </li>
-                                                                    <li className="mas"><input id="2" type="radio" name="size" value="30"/>
-                                                                        <label htmlFor="2"><img src={pmt2} alt=""/></label>
-                                                                    </li>
-                                                                    <li className="ski"><input id="3" type="radio" name="size" value="30"/>
-                                                                        <label htmlFor="3"><img src={pmt3} alt=""/></label>
-                                                                    </li>
-                                                                    <li className="pay"><input id="4" type="radio" name="size" value="30"/>
-                                                                        <label htmlFor="4"><img src={pmt4} alt=""/></label>
-                                                                    </li>
-                                                                </ul>
-                                                                <div className="contact-form form-style">
-                                                                    <div className="row">
-                                                                        <div className="col-lg-6 col-md-12 col-12">
-                                                                            <label>Card holder Name</label>
-                                                                            <input type="text" placeholder="" name="name"/>
-                                                                        </div>
-                                                                        <div className="col-lg-6 col-md-12 col-12">
-                                                                            <label>Card Number</label>
-                                                                            <input type="text" placeholder="" id="card" name="card"/>
-                                                                        </div>
-                                                                        <div className="col-lg-6 col-md-12 col-12">
-                                                                            <label>CVV</label>
-                                                                            <input type="text" placeholder="" name="CVV"/>
-                                                                        </div>
-                                                                        <div className="col-lg-6 col-md-12 col-12">
-                                                                            <label>Expire Date</label>
-                                                                            <input type="text" placeholder="" name="date"/>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="submit-area">
-                                            <button type="submit" className="theme-btn submit-btn">Donate Now</button>
-                                        </div>
-                                    </form> 
-                                </TabPane>
-
-                                <TabPane tabId="3">
-                                    <div className="wpo-blog-single-section">
-                                        <div className="comments-area">
-                                            <div className="comments-section">
-                                                <h3 className="comments-title">Comments</h3>
-                                                <ol className="comments">
-                                                    <li className="comment even thread-even depth-1" id="comment-1">
-                                                        <div id="div-comment-1">
-                                                            <div className="comment-theme">
-                                                                <div className="comment-image"> <img src={blog3} alt=""/> </div>
-                                                            </div>
-                                                            <div className="comment-main-area">
-                                                                <div className="comment-wrapper">
-                                                                    <div className="comments-meta">
-                                                                        <h4>John Abraham <span className="comments-date">Octobor 28,2018 At 9.00am</span></h4>
-                                                                    </div>
-                                                                    <div className="comment-area">
-                                                                        <p>I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, </p>
-                                                                        <div className="comments-reply">
-                                                                            <Link className="comment-reply-link" to="/casesingle"><i className="fa fa-reply" aria-hidden="true"></i><span>Reply</span></Link>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <ul className="children">
-                                                            <li className="comment">
-                                                                <div>
-                                                                    <div className="comment-theme">
-                                                                        <div className="comment-image"> <img src={blog4} alt=""/></div>
-                                                                    </div>
-                                                                    <div className="comment-main-area">
-                                                                        <div className="comment-wrapper">
-                                                                            <div className="comments-meta">
-                                                                                <h4>Lily Watson <span className="comments-date">Octobor 28,2018 At 9.00am</span></h4>
-                                                                            </div>
-                                                                            <div className="comment-area">
-                                                                                <p>I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, </p>
-                                                                                <div className="comments-reply">
-                                                                                    <Link className="comment-reply-link" to="/casesingle"><span><i className="fa fa-reply" aria-hidden="true"></i> Reply</span></Link>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <ul>
-                                                                    <li className="comment">
-                                                                        <div>
-                                                                            <div className="comment-theme">
-                                                                                <div className="comment-image"><img src={blog5} alt=""/> </div>
-                                                                            </div>
-                                                                            <div className="comment-main-area">
-                                                                                <div className="comment-wrapper">
-                                                                                    <div className="comments-meta">
-                                                                                        <h4>John Abraham <span className="comments-date">Octobor 28,2018 At 9.00am</span></h4>
-                                                                                    </div>
-                                                                                    <div className="comment-area">
-                                                                                        <p>I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, </p>
-                                                                                        <div className="comments-reply">
-                                                                                            <Link className="comment-reply-link" to="/casesingle"><span><i className="fa fa-reply" aria-hidden="true"></i> Reply</span></Link>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </li>
-                                                                </ul>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                </ol>
-                                            </div>
-                                        </div>  
-                                        <div className="comment-respond">
-                                            <h3 className="comment-reply-title">Leave a Comment</h3>
-                                            <form onSubmit={SubmitHandler} className="comment-form">
-                                                <div className="form-inputs">
-                                                    <input placeholder="Name" type="text"/>
-                                                    <input placeholder="Email" type="email"/>
-                                                    <input placeholder="Website" type="url"/>
-                                                </div>
-                                                <div className="form-textarea">
-                                                    <textarea id="comment" placeholder="Write Your Comments..."></textarea>
-                                                </div>
-                                                <div className="form-submit">
-                                                    <input id="submit" value="Reply" type="submit"/>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </TabPane>
-                            </TabContent>
-                             
-                            </div>
+                          ))}
                         </div>
+
+                      </div>
+
+                     
+
                     </div>
-                    <SidebarWrap/>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
+
+          {/* Sidebar */}
+          <div className="col col-lg-4">
+            <div className="wpo-service-sidebar">
+
+              <div className="service-sidebar-box">
+                <h3>Our Services</h3>
+
+                <ul>
+                  <li>
+                    <Link to="/assist-personal-activities">
+                      Assist-Personal Activities
+                    </Link>
+                  </li>
+
+                  <li>
+                    <Link to="/services">
+                      Community Participation
+                    </Link>
+                  </li>
+
+                  <li>
+                    <Link to="/services">
+                      Assist Travel & Transport
+                    </Link>
+                  </li>
+
+                  <li>
+                    <Link to="/services">
+                      Daily Tasks & Shared Living
+                    </Link>
+                  </li>
+
+                  <li>
+                    <Link to="/services">
+                      Household Tasks
+                    </Link>
+                  </li>
+
+                  <li>
+                    <Link to="/services">
+                      Participate Community
+                    </Link>
+                  </li>
+
+                  <li>
+                    <Link to="/services">
+                      Group & Centre Based Activities
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="service-sidebar-box">
+                <h3>Need Support?</h3>
+
+                <p>
+                  Talk to our friendly team about your individual support
+                  needs.
+                </p>
+
+                <Link
+                  to="/contact"
+                  onClick={ClickHandler}
+                  className="theme-btn"
+                >
+                  Contact Us
+                </Link>
+              </div>
+
+            </div>
+          </div>
+
         </div>
-            );
-    }
-    
-    export default CaseSingle;
-          
-          
-          
-          
+      </div>
+    </div>
+  );
+};
+
+export default AssistPersonalActivities;

@@ -36,7 +36,7 @@
 }
 
 .wpo-case-details-text {
-  margin-top: 50px;
+  margin-top: 0px !important;
 }
 
 .case-b-text {
@@ -69,6 +69,7 @@
 
 .case-bb-text ul {
   display: unset;
+  margin-bottom: 30px !important;
 }
 
 .case-bb-text ul li {
@@ -328,4 +329,19 @@
 
 input[type=checkbox], input[type=radio]{
   margin-right: 5px;
+}
+.service-sidebar-box {
+  border: 1px solid #ebebeb;
+    padding: 30px;
+}
+.service-sidebar-box ul li {
+      margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #f2f0f0;
+}
+.case-bb-text h5 {
+  margin-bottom:20px;
+}
+.case-bb-text h3 {
+  margin-top:20px;
 }

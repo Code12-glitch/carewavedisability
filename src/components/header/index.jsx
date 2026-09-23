@@ -57,8 +57,45 @@ const Header = () => {
                   </li>
                   <li>
                     <Link to="/services" title="">
-                     Services
+                      Services
                     </Link>
+                    <ul>
+                      <li>
+                        <Link to="/assist-personal-activities" title="">
+                          Assist-Personal Activities
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/assist-travel-transport" title="">
+                          Assist-Travel & Transport
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/daily-task-shared-living" title="">
+                          Daily Tasks & Shared Living
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/community-participation" title="">
+                          Community Participation
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/household-tasks" title="">
+                          Household Tasks
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/participate-community" title="">
+                          Participate Community
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/group-centre-activities" title="">
+                          Group & Centre Activities
+                        </Link>
+                      </li>
+                    </ul>
                   </li>
                   <li>
                     <Link to="/case" title="">

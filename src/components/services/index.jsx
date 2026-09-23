@@ -22,49 +22,49 @@ const Services = () => {
       title: "Assist-Personal Activities",
       description:
         "We provide personalised support with everyday personal activities, helping participants live safely, independently, and with dignity while working towards their individual goals.",
-      link: "/services/assist-personal-activities",
+      link: "/assist-personal-activities",
     },
     {
       image: service2,
       title: "Assist-Travel & Transport",
       description:
         "We provide safe, reliable travel and transport support, helping participants travel confidently, build independence, and access personal, community, and public transport.",
-      link: "/services/community-participation",
+      link: "/assist-travel-transport",
     },
     {
       image: service3,
       title: "Daily Tasks & Shared Living",
       description:
         "We provide personalised support with daily activities and shared living, helping participants build independence, confidence, and a meaningful lifestyle.",
-      link: "/services/personal-care",
+      link: "/daily-task-shared-living",
     },
     {
       image: service4,
       title: "Community Participation",
       description:
         "We support participants to connect with their community, build meaningful relationships, and confidently take part in social, recreational, and community activities.",
-      link: "/services/supported-independent-living",
+      link: "/community-participation",
     },
     {
       image: service5,
       title: "Household Tasks",
       description:
         "We provide personalised household support to maintain a clean, safe, and comfortable home environment, helping participants manage everyday tasks with greater independence.",
-      link: "/services/social-recreational-support",
+      link: "/household-tasks",
     },
     {
       image: service6,
       title: "Participate Community",
       description:
         "We support participants to build confidence, develop life skills, and take part in meaningful community activities based on their interests and goals.",
-      link: "/services/daily-tasks-shared-living",
+      link: "/participate-community",
     },
     {
       image: service7,
       title: "Group & Centre Activities",
       description:
         "We provide engaging group and centre-based activities that encourage social connection, skill development, confidence, and greater community participation.",
-      link: "/services/other-support",
+      link: "/group-centre-activities",
     },
   ];
 
