@@ -102,23 +102,11 @@ const Header = () => {
                       New Participants
                     </Link>
                     </li>
-                  <li>
-                    <Link to="/case" title="">
-                      Causes
+                   <li>
+                    <Link to="/referral" title="">
+                      Referral
                     </Link>
-                    <ul>
-                      <li>
-                        <Link to="/case" title="">
-                          Causes
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/case-single" title="">
-                          Causes Single
-                        </Link>
-                      </li>
-                    </ul>
-                  </li>
+                    </li>
                   <li>
                     <Link to="/event" title="">
                       Event

@@ -1,21 +1,21 @@
 import React, { Fragment } from "react";
 import Header from "../../components/header";
 import PageTitle from "../../components/pagetitle";
-import NewParticipants from "../../components/NewParticipants";
+import Referral from "../../components/Referral";
 import Footer from "../../components/footer";
 import Scrollbar from "../../components/scrollbar";
 
-const NewParticipantsPage = () => {
+const ReferralPage = () => {
   return (
     <Fragment>
       <Header />
 
       <PageTitle
-        pageTitle="New Participants"
-        pagesub="New Participants"
+        pageTitle="Referral"
+        pagesub="Referral"
       />
 
-      <NewParticipants />
+      <Referral />
 
       <Footer />
       <Scrollbar />
@@ -23,4 +23,4 @@ const NewParticipantsPage = () => {
   );
 };
 
-export default NewParticipantsPage;
+export default ReferralPage;

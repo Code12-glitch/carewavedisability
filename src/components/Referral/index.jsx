@@ -6,7 +6,7 @@ import pmt2 from "../../images/checkout/img-2.png";
 import pmt3 from "../../images/checkout/img-3.png";
 import pmt4 from "../../images/checkout/img-4.png";
 
-const NewParticipants = (props) => {
+const Referral = (props) => {
   const SubmitHandler = (e) => {
     e.preventDefault();
   };
@@ -18,7 +18,7 @@ const NewParticipants = (props) => {
           <div className="col-lg-12">
             <div className="wpo-donate-header">
               <h2>
-                Please fill in the information below as completely as possible
+                Send Us Your Referrals
               </h2>
             </div>
             <form onSubmit={SubmitHandler} action="#">
@@ -31,7 +31,7 @@ const NewParticipants = (props) => {
                       className="form-control"
                       name="name"
                       id="fname"
-                      placeholder="First Name"
+                      placeholder="Participant First Name"
                       required
                     />
                   </div>
@@ -41,73 +41,58 @@ const NewParticipants = (props) => {
                       className="form-control"
                       name="name"
                       id="name"
-                      placeholder="Last Name"
+                      placeholder="Participant Last Name"
                       required
                     />
                   </div>
-                  <div className="col-lg-6 col-md-6 col-sm-6 col-12 form-group">
-                    <input
-                      type="text"
-                      className="form-control"
-                      name="ndis"
-                      id="ndis"
-                      placeholder="NDIS Number (if applicable)"
-                      required
-                    />
-                  </div>
-                  <div className="col-lg-6 col-md-6 col-sm-6 col-12 form-group">
-                    <select
-                      className="form-control"
-                      name="other"
-                      id="othertype"
-                      required
-                    >
-                      <option value="">Select Other Type</option>
-                      <option value="english">English</option>
-                      <option value="other"> Other </option>
-                    </select>
-                  </div>
-
                   <div className="col-lg-6 col-md-6 col-sm-6 col-12 form-group">
                     <input
                       type="phone"
                       className="form-control"
                       name="phone"
                       id="phone"
-                      placeholder="Phone Number"
+                      placeholder="Participant Mobile Number"
                       required
                     />
                   </div>
-
-                  <div className="col-lg-6 col-md-6 col-sm-6 col-12 form-group">
-                    <input
-                      type="text"
-                      className="form-control"
-                      name="suburb"
-                      id="suburb"
-                      placeholder="Suburb"
-                      required
-                    />
-                  </div>
-                  <div className="col-lg-6 col-md-6 col-sm-6 col-12 form-group">
-                    <select
-                      className="form-control"
-                      name="selectoption"
-                      id="selectoption"
-                      required
-                    >
-                      <option value="">Select Option</option>
-                      <option value="english">Email</option>
-                      <option value="other"> Phone </option>
-                    </select>
-                  </div>
+                  
                   <div className="col-lg-6 col-md-6 col-sm-6 col-12 form-group clearfix">
                     <input
                       type="email"
                       className="form-control"
                       name="email"
                       id="email"
-                      placeholder="Email"
+                      placeholder="Participant Email Address"
+                    />
+                  </div>
+                  <div className="col-lg-6 col-md-6 col-sm-6 col-12 form-group">
+                    <input
+                      type="text"
+                      className="form-control"
+                      name="company"
+                      id="company"
+                      placeholder="Referral Company and/or Person"
+                      required
+                    />
+                  </div>
+                  <div className="col-lg-6 col-md-6 col-sm-6 col-12 form-group">
+                    <input
+                      type="text"
+                      className="form-control"
+                      name="services"
+                      id="services"
+                      placeholder="Services being referred"
+                      required
+                    />
+                  </div>
+                  <div className="col-lg-12 col-md-12 col-sm-12 col-12 form-group">
+                    <input
+                      type="text"
+                      className="form-control"
+                      name="contact"
+                      id="contact"
+                      placeholder="Contact Number or Referred"
+                      required
                     />
                   </div>
                   <div className="col-lg-12 col-12 form-group">
@@ -115,7 +100,7 @@ const NewParticipants = (props) => {
                       className="form-control"
                       name="note"
                       id="note"
-                      placeholder="Anything else you would like to tell us?"
+                      placeholder="Comments"
                     ></textarea>
                   </div>
 
@@ -134,4 +119,4 @@ const NewParticipants = (props) => {
   );
 };
 
-export default NewParticipants;
+export default Referral;

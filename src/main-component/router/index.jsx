@@ -16,23 +16,24 @@ import ParticipateCommunityPage from "../ParticipateCommunityPage";
 import GroupCentreActivitiesPage from "../GroupCentreActivitiesPage";
 
 import NewParticipantsPage from "../NewParticipantsPage";
-import CasePage from "../CasePage";
-import CaseSinglePage from "../CaseSinglePage";
-import EventPage from "../EventPage";
-import EventPageSingle from "../EventPageSingle";
-import DonatePage from "../DonatePage";
-import VolunteerPage from "../volunteerPage";
-import BlogPage from "../BlogPage";
-import BlogPageLeft from "../BlogPageLeft";
-import BlogPageFullwidth from "../BlogPageFullwidth";
-import BlogDetails from "../BlogDetails";
-import BlogDetailsLeftSiide from "../BlogDetailsLeftSiide";
-import BlogDetailsFull from "../BlogDetailsFull";
-import ErrorPage from "../ErrorPage";
-import ContactPage from "../ContactPage";
-import LoginPage from "../LoginPage";
-import SignUpPage from "../SignUpPage";
-import ForgotPassword from "../ForgotPassword";
+import ReferralPage from "../ReferralPage";
+import CasePage from '../CasePage'
+import CaseSinglePage from '../CaseSinglePage'
+import EventPage from '../EventPage'
+import EventPageSingle from '../EventPageSingle'
+import DonatePage from '../DonatePage'
+import VolunteerPage from '../volunteerPage'
+import BlogPage from '../BlogPage'
+import BlogPageLeft from '../BlogPageLeft'
+import BlogPageFullwidth from '../BlogPageFullwidth'
+import BlogDetails from '../BlogDetails'
+import BlogDetailsLeftSiide from '../BlogDetailsLeftSiide'
+import BlogDetailsFull from '../BlogDetailsFull'
+import ErrorPage from '../ErrorPage'
+import ContactPage from '../ContactPage'
+import LoginPage from '../LoginPage'
+import SignUpPage from '../SignUpPage'
+import ForgotPassword from '../ForgotPassword'
 
 const AllRoute = () => {
   return (
@@ -89,8 +90,18 @@ const AllRoute = () => {
             path="group-centre-activities"
             element={<GroupCentreActivitiesPage />}
           />
+
           {/* New Participants */}
-          <Route path="new-participants" element={<NewParticipantsPage />} />
+          <Route
+            path="new-participants"
+            element={<NewParticipantsPage />}
+          />
+
+          {/* Referral */}
+          <Route
+            path="referral"
+            element={<ReferralPage />}
+          />
 
           {/* Cases */}
           <Route path="case" element={<CasePage />} />
@@ -109,10 +120,12 @@ const AllRoute = () => {
           <Route path="blog-left" element={<BlogPageLeft />} />
           <Route path="blog-fullwidth" element={<BlogPageFullwidth />} />
           <Route path="blog-details" element={<BlogDetails />} />
+
           <Route
             path="blog-details-left"
             element={<BlogDetailsLeftSiide />}
           />
+
           <Route
             path="blog-details-fullwidth"
             element={<BlogDetailsFull />}
