@@ -5,6 +5,7 @@ import Homepage2 from '../HomePage2'
 import Homepage3 from '../HomePage3'
 import AboutPage from '../AboutPage'
 import NdisPage from '../NdisPage'
+import ServicesPage from '../ServicesPage'
 import CasePage from '../CasePage'
 import CaseSinglePage from '../CaseSinglePage'
 import EventPage from '../EventPage'
@@ -43,6 +44,7 @@ const AllRoute = () => {
 
                     {/* NDIS Page */}
                     <Route path="ndis" element={<NdisPage />} />
+                    <Route path="services" element={<ServicesPage />} />
 
                     <Route path="case" element={<CasePage />} />
                     <Route

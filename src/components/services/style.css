@@ -1,0 +1,84 @@
+.wpo-services-area {
+    background: #fff;
+}
+
+.wpo-service-card {
+    background: #fff;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    height: calc(100% - 30px);
+}
+
+.wpo-service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+}
+
+.wpo-service-card-img {
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+}
+
+.wpo-service-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.wpo-service-card:hover .wpo-service-card-img img {
+    transform: scale(1.05);
+}
+
+.wpo-service-card-content {
+    padding: 30px 25px;
+}
+
+.wpo-service-card-content h2 {
+    font-size: 24px;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+.wpo-service-card-content p {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.service-btn {
+    display: inline-block;
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.service-btn:hover {
+    color: #f05a28;
+}
+
+@media (max-width: 991px) {
+    .wpo-service-card-content {
+        padding: 25px 20px;
+    }
+
+    .wpo-service-card-img {
+        height: 220px;
+    }
+}
+
+@media (max-width: 575px) {
+    .wpo-service-card-img {
+        height: 230px;
+    }
+
+    .wpo-service-card-content h2 {
+        font-size: 21px;
+    }
+}
