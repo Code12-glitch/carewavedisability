@@ -13,8 +13,9 @@ import DailyTasksSharedLivingPage from "../DailyTasksSharedLivingPage";
 import CommunityParticipationPage from "../CommunityParticipationPage";
 import HouseholdTasksPage from "../HouseholdTasksPage";
 import ParticipateCommunityPage from "../ParticipateCommunityPage";
-import GroupCentreActivitiesPage from "../NewParticipantsPage";
-import NewParticipantsPage from "../GroupCentreActivitiesPage";
+import GroupCentreActivitiesPage from "../GroupCentreActivitiesPage";
+
+import NewParticipantsPage from "../NewParticipantsPage";
 import CasePage from "../CasePage";
 import CaseSinglePage from "../CaseSinglePage";
 import EventPage from "../EventPage";
@@ -36,9 +37,7 @@ import ForgotPassword from "../ForgotPassword";
 const AllRoute = () => {
   return (
     <div className="App">
-      {" "}
       <BrowserRouter>
-        {" "}
         <Routes>
           {/* Home */}
           <Route path="/" element={<Homepage />} />
@@ -76,7 +75,10 @@ const AllRoute = () => {
             element={<CommunityParticipationPage />}
           />
 
-          <Route path="household-tasks" element={<HouseholdTasksPage />} />
+          <Route
+            path="household-tasks"
+            element={<HouseholdTasksPage />}
+          />
 
           <Route
             path="participate-community"
@@ -87,8 +89,7 @@ const AllRoute = () => {
             path="group-centre-activities"
             element={<GroupCentreActivitiesPage />}
           />
-
-          {/* Services */}
+          {/* New Participants */}
           <Route path="new-participants" element={<NewParticipantsPage />} />
 
           {/* Cases */}
@@ -108,17 +109,24 @@ const AllRoute = () => {
           <Route path="blog-left" element={<BlogPageLeft />} />
           <Route path="blog-fullwidth" element={<BlogPageFullwidth />} />
           <Route path="blog-details" element={<BlogDetails />} />
-
-          <Route path="blog-details-left" element={<BlogDetailsLeftSiide />} />
-
-          <Route path="blog-details-fullwidth" element={<BlogDetailsFull />} />
+          <Route
+            path="blog-details-left"
+            element={<BlogDetailsLeftSiide />}
+          />
+          <Route
+            path="blog-details-fullwidth"
+            element={<BlogDetailsFull />}
+          />
 
           {/* Contact / Authentication */}
           <Route path="404" element={<ErrorPage />} />
           <Route path="contact" element={<ContactPage />} />
           <Route path="login" element={<LoginPage />} />
           <Route path="signup" element={<SignUpPage />} />
-          <Route path="forgot-password" element={<ForgotPassword />} />
+          <Route
+            path="forgot-password"
+            element={<ForgotPassword />}
+          />
         </Routes>
       </BrowserRouter>
     </div>
