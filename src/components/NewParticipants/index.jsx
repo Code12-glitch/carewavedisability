@@ -5,7 +5,7 @@ import pmt2 from '../../images/checkout/img-2.png'
 import pmt3 from '../../images/checkout/img-3.png'
 import pmt4 from '../../images/checkout/img-4.png'
 
-const Donate = (props) => {
+const NewParticipants = (props) => {
 
     const SubmitHandler = (e) =>{
         e.preventDefault()
@@ -114,4 +114,4 @@ const Donate = (props) => {
     )
 }
 
-export default Donate;
+export default NewParticipants;

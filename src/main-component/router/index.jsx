@@ -13,8 +13,8 @@ import DailyTasksSharedLivingPage from "../DailyTasksSharedLivingPage";
 import CommunityParticipationPage from "../CommunityParticipationPage";
 import HouseholdTasksPage from "../HouseholdTasksPage";
 import ParticipateCommunityPage from "../ParticipateCommunityPage";
-import GroupCentreActivitiesPage from "../GroupCentreActivitiesPage";
-
+import GroupCentreActivitiesPage from "../NewParticipantsPage";
+import NewParticipantsPage from "../GroupCentreActivitiesPage";
 import CasePage from "../CasePage";
 import CaseSinglePage from "../CaseSinglePage";
 import EventPage from "../EventPage";
@@ -34,101 +34,95 @@ import SignUpPage from "../SignUpPage";
 import ForgotPassword from "../ForgotPassword";
 
 const AllRoute = () => {
-return ( <div className="App"> <BrowserRouter> <Routes>
+  return (
+    <div className="App">
+      {" "}
+      <BrowserRouter>
+        {" "}
+        <Routes>
+          {/* Home */}
+          <Route path="/" element={<Homepage />} />
+          <Route path="home" element={<Homepage />} />
+          <Route path="home2" element={<Homepage2 />} />
+          <Route path="home3" element={<Homepage3 />} />
 
+          {/* About */}
+          <Route path="about" element={<AboutPage />} />
 
-      {/* Home */}
-      <Route path="/" element={<Homepage />} />
-      <Route path="home" element={<Homepage />} />
-      <Route path="home2" element={<Homepage2 />} />
-      <Route path="home3" element={<Homepage3 />} />
+          {/* NDIS */}
+          <Route path="ndis" element={<NdisPage />} />
 
-      {/* About */}
-      <Route path="about" element={<AboutPage />} />
+          {/* Services */}
+          <Route path="services" element={<ServicesPage />} />
 
-      {/* NDIS */}
-      <Route path="ndis" element={<NdisPage />} />
+          {/* Individual Services */}
+          <Route
+            path="assist-personal-activities"
+            element={<AssistPersonalActivitiesPage />}
+          />
 
-      {/* Services */}
-      <Route path="services" element={<ServicesPage />} />
+          <Route
+            path="assist-travel-transport"
+            element={<AssistTravelTransportPage />}
+          />
 
-      {/* Individual Services */}
-      <Route
-        path="assist-personal-activities"
-        element={<AssistPersonalActivitiesPage />}
-      />
+          <Route
+            path="daily-tasks-shared-living"
+            element={<DailyTasksSharedLivingPage />}
+          />
 
-      <Route
-        path="assist-travel-transport"
-        element={<AssistTravelTransportPage />}
-      />
+          <Route
+            path="community-participation"
+            element={<CommunityParticipationPage />}
+          />
 
-      <Route
-        path="daily-tasks-shared-living"
-        element={<DailyTasksSharedLivingPage />}
-      />
+          <Route path="household-tasks" element={<HouseholdTasksPage />} />
 
-      <Route
-        path="community-participation"
-        element={<CommunityParticipationPage />}
-      />
+          <Route
+            path="participate-community"
+            element={<ParticipateCommunityPage />}
+          />
 
-      <Route
-        path="household-tasks"
-        element={<HouseholdTasksPage />}
-      />
+          <Route
+            path="group-centre-activities"
+            element={<GroupCentreActivitiesPage />}
+          />
 
-      <Route
-        path="participate-community"
-        element={<ParticipateCommunityPage />}
-      />
+          {/* Services */}
+          <Route path="new-participants" element={<NewParticipantsPage />} />
 
-      <Route
-        path="group-centre-activities"
-        element={<GroupCentreActivitiesPage />}
-      />
+          {/* Cases */}
+          <Route path="case" element={<CasePage />} />
+          <Route path="case-single" element={<CaseSinglePage />} />
 
-      {/* Cases */}
-      <Route path="case" element={<CasePage />} />
-      <Route path="case-single" element={<CaseSinglePage />} />
+          {/* Events */}
+          <Route path="event" element={<EventPage />} />
+          <Route path="event-details" element={<EventPageSingle />} />
 
-      {/* Events */}
-      <Route path="event" element={<EventPage />} />
-      <Route path="event-details" element={<EventPageSingle />} />
+          {/* Other */}
+          <Route path="donate" element={<DonatePage />} />
+          <Route path="volunteer" element={<VolunteerPage />} />
 
-      {/* Other */}
-      <Route path="donate" element={<DonatePage />} />
-      <Route path="volunteer" element={<VolunteerPage />} />
+          {/* Blog */}
+          <Route path="blog" element={<BlogPage />} />
+          <Route path="blog-left" element={<BlogPageLeft />} />
+          <Route path="blog-fullwidth" element={<BlogPageFullwidth />} />
+          <Route path="blog-details" element={<BlogDetails />} />
 
-      {/* Blog */}
-      <Route path="blog" element={<BlogPage />} />
-      <Route path="blog-left" element={<BlogPageLeft />} />
-      <Route path="blog-fullwidth" element={<BlogPageFullwidth />} />
-      <Route path="blog-details" element={<BlogDetails />} />
+          <Route path="blog-details-left" element={<BlogDetailsLeftSiide />} />
 
-      <Route
-        path="blog-details-left"
-        element={<BlogDetailsLeftSiide />}
-      />
+          <Route path="blog-details-fullwidth" element={<BlogDetailsFull />} />
 
-      <Route
-        path="blog-details-fullwidth"
-        element={<BlogDetailsFull />}
-      />
-
-      {/* Contact / Authentication */}
-      <Route path="404" element={<ErrorPage />} />
-      <Route path="contact" element={<ContactPage />} />
-      <Route path="login" element={<LoginPage />} />
-      <Route path="signup" element={<SignUpPage />} />
-      <Route path="forgot-password" element={<ForgotPassword />} />
-
-    </Routes>
-  </BrowserRouter>
-</div>
-
-
-);
+          {/* Contact / Authentication */}
+          <Route path="404" element={<ErrorPage />} />
+          <Route path="contact" element={<ContactPage />} />
+          <Route path="login" element={<LoginPage />} />
+          <Route path="signup" element={<SignUpPage />} />
+          <Route path="forgot-password" element={<ForgotPassword />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
+  );
 };
 
 export default AllRoute;

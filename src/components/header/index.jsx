@@ -97,6 +97,11 @@ const Header = () => {
                       </li>
                     </ul>
                   </li>
+                   <li>
+                    <Link to="/new-participants" title="">
+                      New Participants
+                    </Link>
+                    </li>
                   <li>
                     <Link to="/case" title="">
                       Causes

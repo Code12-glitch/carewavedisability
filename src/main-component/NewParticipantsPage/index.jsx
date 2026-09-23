@@ -1,20 +1,20 @@
 import React, {Fragment} from 'react';
 import Header from '../../components/header'
 import PageTitle from '../../components/pagetitle'
-import Donate from '../../components/Donate'
+import NewParticipants from '../../components/NewParticipants'
 import Footer from '../../components/footer'
 import Scrollbar from '../../components/scrollbar'
 
 
-const DonatePage =() => {
+const NewParticipantsPage =() => {
     return(
         <Fragment>
             <Header/>
-            <PageTitle pageTitle={'Donate Now'} pagesub={'Donate'}/> 
-            <Donate/>
+            <PageTitle pageTitle={'New Participants'} pagesub={'New Participants'}/> 
+            <NewParticipants/>
             <Footer/>
             <Scrollbar/>
         </Fragment>
     )
 };
-export default DonatePage;
+export default NewParticipantsPage;
