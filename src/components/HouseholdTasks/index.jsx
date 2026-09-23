@@ -5,7 +5,7 @@ import simg from "../../images/services/img-3.png";
 
 import "./style.css";
 
-const CommunityParticipation = () => {
+const HouseholdTasks = () => {
   const [openFaq, setOpenFaq] = useState(null);
 
   const ClickHandler = () => {
@@ -14,26 +14,26 @@ const CommunityParticipation = () => {
 
   const faqData = [
     {
-      question: "What is community participation Melbourne?",
+      question: "What are household tasks under NDIS?",
       answer:
-        "Community Participation is an NDIS support that helps participants take part in social, educational, and community activities to build independence and meaningful relationships. ",
+        "Household tasks under the NDIS are supports that help participants complete essential daily chores they cannot manage due to their disability. ",
     },
     {
       question:
-        "Do you offer NDIS social and community participation Melbourne?",
+        "Do you offer household task assistance?",
       answer:
-        "Yes. Carewave Disability Services offers community participation Melbourne, along with household tasks, participation in community, daily tasks, shared living and more. ",
+        "Yes. Carewave Disability Services offers household tasks along with participate community, assist personal activities and more. ",
     },
     {
       question:
-        "Who is eligible for Community Participation Melbourne supports?",
+        "Does the NDIS pay for all cleaning services?",
       answer:
-        "Participants with relevant NDIS funding for community participation in their plan can access these supports, depending on their goals and approved funding. ",
+        "No, the NDIS only funds reasonable and necessary cleaning related to your disability. ",
     },
     {
       question: "What services do you offer?",
       answer:
-        "Carewave Disability Services offer NDIS social and community participation Melbourne, along with assist personal activities, daily tasks, shared living, household tasks, and more. ",
+        "Carewave Disability Services offers household tasks Melbourne, along with daily tasks, shared living, assist personal activities, community participation, and more. ",
     },
   ];
 
@@ -62,165 +62,123 @@ const CommunityParticipation = () => {
                 <div className="wpo-case-content">
                   <div className="wpo-case-text-top">
                     <h2>
-                      Your Trusted NDIS Community Participation Provider
-                      Melbourne
+                      Trusted Household Task Services Designed Around Your Needs
                     </h2>
 
                     <p>
-                      We humans are social animals, and we subconsciously love
-                      to build connections with like-minded people. An NDIS
-                      provider helps you with various community participation
-                      and social activities. It’s more than just joining a
-                      group; it’s about growing, belonging, and thriving in your
-                      community.
+                      Carewave Disability Services is one of the leading
+                      providers when it comes to household tasks. We have
+                      seasoned support workers who will offer you the support
+                      that you require to perform all household tasks Melbourne
+                      efficiently. Our support workers will tailor household
+                      task assistance services for you after assessing your
+                      needs. So, if you want all-inclusive support and want to
+                      reach your goals, you are at the right place. Connect with
+                      us to know more.
                     </p>
 
                     <p>
-                      At Carewave Disability Services, we believe you're a
-                      crucial part of your community. That's why our Community
-                      Participation Melbourne service, funded as a core support
-                      by the NDIS, is all about helping you dive into the heart
-                      of your local community. Imagine cheering on your
-                      favourite team at a community sports event, joining a
-                      local painting group, or lending a hand at a local charity
-                      - we're here to make it happen.
+                      Our team members assisting with NDIS household tasks will create necessary plans after analysing your impairments and how they have affected you. We also provide household tasks, assist personal activities, daily tasks, shared living, community participation and more. 
                     </p>
 
                     <h3>
-                      What Are NDIS Community Participation Melbourne Supports?
+                      What are Household Tasks Services?
                     </h3>
 
                     <p>
-                      Community participation Melbourne support is also called
-                      NDIS social and community participation Melbourne. They
-                      are designed to help participants join activities in their
-                      local community.
+                      NDIS Household Tasks services aim to support participants in their daily living activities and maintain a comfortable, safe home environment. 
                     </p>
 
                     <div className="case-bb-text">
-                      <h5>Community participation supports may include:</h5>
+                      <h5>Your support might include: </h5>
 
                       <ul>
-                        <li>Attending social groups and community events</li>
-                        <li>
-                          Joining sports, fitness, or recreational activities
-                        </li>
-                        <li>
-                          Visiting libraries, museums, parks, or local
-                          attractions
-                        </li>
-                        <li>
-                          Learning new skills through workshops or hobby classes
-                        </li>
-                        <li>
-                          Volunteering or participating in community programs
-                        </li>
-                        <li>Support to attend appointments or local outings</li>
-                        <li>
-                          Building communication, social, and independent living
-                          skills
-                        </li>
-                        <li>
-                          Assistance with using public transport and navigating
-                          the community
-                        </li>
+                        <li>Cleaning </li>
+                        <li>Laundry</li>
+                        <li>Light home maintenance </li>
+                        <li>Shopping </li>
+                        <li>Bill paying and household admin</li>
                       </ul>
 
-                      <h3>Types of Community Participation Melbourne</h3>
+                      <h3>Benefits of our Household Tasks under NDIS</h3>
 
-                      <p>NDIS community participation Melbourne includes: </p>
+                      <p>Given below are the key advantages of our NDIS household tasks.  </p>
 
                       <ul>
-                        <li>Community events and festivals</li>
-                        <li>Social groups and clubs</li>
-                        <li>Recreational activities</li>
-                        <li>Arts and cultural experiences</li>
-                        <li>Sporting activities and gym access</li>
-                        <li>Library and educational activities </li>
-                        <li>Shopping and errand assistance</li>
+                        <li>Promoting Independence</li>
+                        <li>Enhanced Quality of Life</li>
+                        <li>Tailored Support Based on Individual Needs</li>
+                        <li>Inclusion and Community Engagement</li>
+                        <li>Stress Reduction for Participants and Carers</li>
+                        <li>Health and Well-being</li>
                       </ul>
 
-                      <h3>What Community participation do we offer? </h3>
+                      <h3>Our Household Tasks Melbourne Services</h3>
 
                       <p>
-                        NDIS social and community participation Melbourne
-                        services focus on equipping you with practical life
-                        skills and giving you the support you need to live with
-                        confidence and ease.
+                        We provide reliable Household Tasks Melbourne services to help NDIS participants maintain a clean, safe, and comfortable home while supporting greater independence. 
                       </p>
+                      <h5>Our services include:</h5>>
+
+                      <ul>
+                        <li>General home cleaning and tidying</li>
+                        <li>Dishwashing and rubbish removal</li>
+                        <li>Grocery shopping assistance</li>
+                        <li>Bed making and household organisation</li>
+                        <li>Light gardening and yard maintenance</li>
+                        <li>Support tailored to your NDIS goals and routine</li>
+                        <li>Flexible scheduling across Melbourne</li>
+                      </ul>
+
+                      <h3>How to choose a provider for household tasks under NDIS?</h3>
+
                       <p>
-                        Here’s what we offer to help you take charge of your
-                        daily life:
+                        Before finalising a provider for household tasks Melbourne, it is crucial that you consider some factors. You will be relaxed if you are assured that your loved ones are in safe hands. Some factors are: 
                       </p>
 
                       <ul>
-                        <li>Budgeting and Financial Management</li>
-                        <li>Communication and Administration Support</li>
-                        <li>Shopping Assistance</li>
-                        <li>Appointment Support</li>
-                        <li>Health and Wellbeing</li>
-                      </ul>
-
-                      <h3>
-                        Key Benefits of Community Participation Melbourne
-                      </h3>
-
-                      <p>
-                        After participating in, participants experienced the following benefits of NDIS community participation Melbourne:
-                      </p>
-
-                      <ul>
-                        <li>Improved Social Connections</li>
-                        <li>Enhanced Physical and Mental Wellbeing</li>
-                        <li>Skill Development and Independence</li>
-                        <li>Opportunities for Employment and Volunteering</li>
-                        <li>Strengthening Sense of Belonging</li>
-                      </ul>
-
-                      <h3>
-                        How to Choose a Provider for Community Participation Melbourne under NDIS?
-                      </h3>
-
-                      <p>
-                        Choosing the right Community Participation provider can help you build confidence, develop new skills, and enjoy meaningful social connections. Here are some important factors to consider:
-                      </p>
-
-                      <ul>
-                        <li>Look for experience with Community Participation </li>
-
-                        <li>Ensure supports are personalised </li>
-
-                        <li>Check staff qualifications and approach</li>
-
-                        <li>Ask about activity options </li>
-
-                        <li>Choose a flexible provider</li>
-
-                        <li>Review communication and responsiveness </li>
-
-                        <li>Read reviews and seek recommendations</li>
-
-                        <li>Discuss the service agreement </li>
-                      </ul>
-
-                      <h3>
-                        Why choose Carewave Disability Services as your community participation Melbourne provider? 
-                      </h3>
-
-                      <p>
-                        Participants and their family members choose Carewave Disability Services, as we are a reliable NDIS provider for community participation. Select us as:
-                      </p>
-
-                      <ul>
-                        <li>Dedicated provider </li>
-                        <li>Personalised support</li>
-                        <li>Range of services</li>
+                        <li>NDIS-registered provider</li>
                         <li>Qualified team</li>
-                        <li>Flexible</li>
-                        <li>Comprehensive support </li>
+                        <li>Personalised support </li>
+                        <li>Flexible </li>
+                        <li>Past client review </li>
+                        <li>Transparent pricing </li>
+                        <li>Clear communication </li>
                       </ul>
 
-                      
+                      <h3>
+                        Signs You Need a Provider for Household Tasks Under NDIS
+                      </h3>
+
+                      <p>
+                        You may benefit from a household tasks provider if:
+                      </p>
+
+                      <ul>
+                        <li>Keeping your home clean has become difficult due to your disability.</li>
+                        <li>Laundry and linen changes are becoming challenging to complete independently.</li>
+                        <li>You struggle with meal preparation or kitchen cleaning on a regular basis.</li>
+                        <li>Maintaining a safe and hygienic home environment is becoming harder.</li>
+                        <li>Your family or carers need additional assistance with ongoing household responsibilities.</li>
+                        <li>Your NDIS plan includes funding for household tasks, allowing you to access practical in-home support</li>
+                      </ul>
+
+                      <h3>
+                        Why Choose Carewave Disability Services As Your Provider For Household Tasks?
+                      </h3>
+
+                      <p>
+                        Carewave Disability Services' commitment to personalised support, comprehensive care, and the promotion of independence makes it an ideal choice for those seeking household task assistance. Some of the key reasons why you may choose us are: 
+                      </p>
+
+                      <ul>
+                        <li>Comprehensive NDIS Services</li>
+                        <li>Person-Centred Approach</li>
+                        <li>Trained and Friendly Staff</li>
+                        <li>Focus on Independence</li>
+                        <li>Safe and Healthy Living Spaces</li>
+                        <li>Community Integration and Support </li>
+                      </ul>
 
                       {/* FAQ SECTION */}
                       <div className="service-faq">
@@ -351,4 +309,4 @@ const CommunityParticipation = () => {
   );
 };
 
-export default CommunityParticipation;
+export default HouseholdTasks;
