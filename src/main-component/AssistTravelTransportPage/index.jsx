@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import Header from '../../components/header'
 import PageTitle from '../../components/pagetitle'
-import AssistTravelTransport from "../../Components/AssistTravelTransport"
+import AssistTravelTransport from "../../components/AssistTravelTransport"
 import Footer from '../../components/footer'
 import Scrollbar from '../../components/scrollbar'
 
