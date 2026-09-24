@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import Header from '../../components/header'
 import PageTitle from '../../components/pagetitle'
-import DailyTasksSharedLiving from '../../Components/DailyTasksSharedLiving'
+import DailyTasksSharedLiving from '../../components/DailyTasksSharedLiving'
 import Footer from '../../components/footer'
 import Scrollbar from '../../components/scrollbar'
 

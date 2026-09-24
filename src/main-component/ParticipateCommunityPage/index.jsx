@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import Header from "../../components/header";
 import PageTitle from "../../components/pagetitle";
-import ParticipateCommunity from "../../Components/ParticipateCommunity";
+import ParticipateCommunity from "../../components/ParticipateCommunity";
 import Footer from "../../components/footer";
 import Scrollbar from "../../components/scrollbar";
 

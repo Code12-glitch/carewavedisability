@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import Header from "../../components/header";
 import PageTitle from "../../components/pagetitle";
-import GroupCentreActivities from "../../Components/GroupCentreActivities";
+import GroupCentreActivities from "../../components/GroupCentreActivities";
 import Footer from "../../components/footer";
 import Scrollbar from "../../components/scrollbar";
 

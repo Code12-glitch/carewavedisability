@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import Header from "../../components/header";
 import PageTitle from "../../components/pagetitle";
-import HouseholdTasks from "../../Components/HouseholdTasks";
+import HouseholdTasks from "../../components/HouseholdTasks";
 import Footer from "../../components/footer";
 import Scrollbar from "../../components/scrollbar";
 
