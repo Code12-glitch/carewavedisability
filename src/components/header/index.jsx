@@ -153,7 +153,7 @@ const Header = () => {
                   </li> */}
                   <li>
                     <Link to="/blog">Blog</Link>
-                    <ul>
+                    {/* <ul>
                       <li>
                         <Link to="/blog">Blog</Link>
                       </li>
@@ -186,7 +186,7 @@ const Header = () => {
                           </li>
                         </ul>
                       </li>
-                    </ul>
+                    </ul> */}
                   </li>
                   <li>
                     <Link to="/contact" title="">
