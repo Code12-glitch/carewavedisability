@@ -118,7 +118,7 @@ const HouseholdTasks = () => {
                       <p>
                         We provide reliable Household Tasks Melbourne services to help NDIS participants maintain a clean, safe, and comfortable home while supporting greater independence. 
                       </p>
-                      <h5>Our services include:</h5>>
+                      <h5>Our services include:</h5>
 
                       <ul>
                         <li>General home cleaning and tidying</li>
