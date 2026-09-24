@@ -1,6 +1,6 @@
-import {Fragment} from 'react';
+import React, {Fragment} from 'react';
 import Header from '../../components/header'
-import Hero from '../../components/hero'
+import Hero2 from '../../components/hero2'
 import Mission from '../../components/mission'
 import About from '../../components/about'
 import CaseSlide from '../../components/case'
@@ -13,23 +13,31 @@ import BlogSection from '../../components/BlogSection'
 import Footer from '../../components/footer'
 import Scrollbar from '../../components/scrollbar'
 
+import Services from '../../components/services'
+import Testimonials from '../../components/testimonials' 
+import Faq from '../../components/faq'
+
 
 const HomePage =() => {
     return(
         <Fragment>
             <Header/>
-            <Hero/>
-            <Mission/>
+            <Hero2/>
+            {/* <Mission subclass={'section-padding'}/> */}
             <About/>
-            <CaseSlide/>
-            <CounterSection/>
-            <TeamSection/>
+            {/* <CaseSlide/> */}
+            {/* <CounterSection/> */}
+            <Services />
+            
+             <CtaSection/> 
+            <Testimonials /> 
+            <Faq />
+            {/* <TeamSection/>
             <WorldSection/>
-            <EventSection/>
-            <CtaSection/>
-            <BlogSection/>
+            <EventSection/> */}
+            {/* <BlogSection/> */}
             <Footer/>
-            <Scrollbar/> 
+            <Scrollbar/>
         </Fragment>
     )
 };
