@@ -22,11 +22,11 @@ const HomePage2 = () => {
       <Hero2 />
       {/* <Mission subclass={'section-padding'}/> */}
       <About />
-      <CaseSlide />
+      {/* <CaseSlide />
       <CounterSection />
       <TeamSection />
-      <WorldSection />
-      <EventSection />
+      <WorldSection /> */}
+      {/* <EventSection /> */}
       <Testimonials />
       <FAQ />
       <CtaSection />
