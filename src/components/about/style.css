@@ -63,6 +63,12 @@
         top: 0;
     }
 }
+@media screen and (max-width:768px){
+    .wpo-about-text {
+        padding-right: 0px;
+        padding-top: 0px;
+    }
+}
 
 @media(max-width: 450px) {
     .video-text{

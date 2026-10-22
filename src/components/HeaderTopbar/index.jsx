@@ -7,7 +7,7 @@ const HeaderTopbar = () => {
         <div className="topbar">
             <div className="container">
                 <div className="row">
-                    <div className="col col-md-6 col-sm-12 col-12">
+                    <div className="col col-md-8 col-sm-12 col-12">
                         <div className="contact-intro">
                             <ul>
                                 <li><i className="fi flaticon-call"></i>0433 257 716 | 0424 249 901</li>
@@ -15,7 +15,7 @@ const HeaderTopbar = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="col col-md-6 col-sm-12 col-12">
+                    <div className="col col-md-4 col-sm-12 col-12">
                         <div className="contact-info">
                             <ul>
                                 <li><Link to="/login">Login</Link></li>
